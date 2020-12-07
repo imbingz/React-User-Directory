@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Heading from './components/Heading';
 import SearchBar from './components/SearchBar';
+import Table from './components/Table';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 			<Heading />
       <main>
         <SearchBar inputValue={inputValue} handleInputChange={handleInputChange} handleClick={handleClick} />
+        <Table />
       </main>
 		</>
 	);
