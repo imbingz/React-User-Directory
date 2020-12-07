@@ -2,7 +2,7 @@ export const data = [
 	{
 		_id: '5fcb07c9208da39dbc01bc3b',
 		title: 'Operation Manager',
-		isActive: false,
+		isActive: true,
 		picture: {
 			large: 'https://randomuser.me/api/portraits/women/14.jpg',
 			thumbnail: 'https://randomuser.me/api/portraits/thumb/women/14.jpg'
@@ -122,7 +122,7 @@ export const data = [
 	{
 		_id: '5fcb07c95f02adc74680cfef',
 		title: 'Project Manager',
-		isActive: false,
+		isActive: true,
 		picture: {
 			large: 'https://randomuser.me/api/portraits/women/2.jpg',
 			thumbnail: 'https://randomuser.me/api/portraits/thumb/women/2.jpg'
