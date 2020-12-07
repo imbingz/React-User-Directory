@@ -1,9 +1,10 @@
 import React from 'react';
+import './TableHead.css';
 
 function TableHead() {
 	return (
 		<thead>
-			<tr>
+			<tr className='tableHeader'>
 				<th />
 				<th>Name</th>
 				<th>Title</th>
