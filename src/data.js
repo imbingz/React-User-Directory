@@ -124,8 +124,8 @@ export const data = [
 		title: 'Project Manager',
 		isActive: true,
 		picture: {
-			large: 'https://randomuser.me/api/portraits/women/2.jpg',
-			thumbnail: 'https://randomuser.me/api/portraits/thumb/women/2.jpg'
+			// large: 'https://randomuser.me/api/portraits/women/2.jpg',
+			// thumbnail: 'https://randomuser.me/api/portraits/thumb/women/2.jpg'
 		},
 		age: 33,
 		eyeColor: 'brown',
