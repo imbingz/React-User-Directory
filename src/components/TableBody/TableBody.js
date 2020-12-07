@@ -8,7 +8,8 @@ function TableBody({ picture, name, title, location, isActive, phone, email, abo
 		<>
 			<tr className="tbodyRow">
 				<td>
-					<img src={picture.thumbnail} alt='person' />
+               {picture.thumbnail? <img src={picture.thumbnail} alt={name}/> : <img src='http://placehold.it/50x50' alt='placeholder'/>}
+					
 				</td>
 				<td>{name}</td>
 				<td>{title}</td>
@@ -22,9 +23,9 @@ function TableBody({ picture, name, title, location, isActive, phone, email, abo
 			</tr>
          {!isHidden && (
             <>
-               <tr><td>Phone: {phone}</td></tr>
-               <tr><td>Email: {email}</td></tr>
-               <tr><td>About: {about}</td></tr> 
+               <tr className="moreInfo"><td><strong>Phone: </strong> {phone}</td></tr>
+               <tr className="moreInfo"><td><strong>Email: </strong> {email}</td></tr>
+               <tr className="moreInfo"><td><strong>About: </strong> {about}</td></tr> 
             </>
          )}
 		</>
