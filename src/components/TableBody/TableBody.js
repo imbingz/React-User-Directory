@@ -1,16 +1,16 @@
 import React from 'react';
 
-function TableBody() {
+function TableBody({ picture, name, title, location, isActive }) {
 	return (
 		<tbody>
 			<tr>
 				<td>
-					<img src='https://randomuser.me/api/portraits/thumb/men/1.jpg' alt='person' />
+					<img src={picture.thumbnail} alt='person' />
 				</td>
-				<td>Jon Doe</td>
-				<td>Accountant</td>
-				<td>Washington</td>
-				<td>Available</td>
+				<td>{name}</td>
+				<td>{title}</td>
+				<td>{location}</td>
+				<td>{isActive ? 'Available' : 'Out of Office'}</td>
 				{/* <td><button type="submit">+</button></td> */}
 			</tr>
 		</tbody>
