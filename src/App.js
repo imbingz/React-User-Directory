@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {data} from './data';
 import Heading from './components/Heading';
@@ -9,23 +9,29 @@ import Table from './components/Table';
 function App() {
   //Search Bar Component 
   const [ inputValue, setInputValue ] = useState('');
+  const [dataValue, setDataValue] = useState(data)
 
 	const handleInputChange = e => {
-		setInputValue(e.target.value);
+    setDataValue(data)
+    setInputValue(e.target.value);
 	};
 	const handleClick = e => {
-		e.preventDefault();
-    //run filter method n show the result 
-		setInputValue('');
+    e.preventDefault();
+    if(inputValue) {
+      setDataValue(dataValue.filter(person => {
+          return person.name.toLowerCase().includes(inputValue.toLowerCase().trim())
+      }))
+    setInputValue('');
+    }
   };
   
-  //Sort By Component 
+  //SortBy Component 
   const [sortValue, setSortValue] = useState('')
   const handleSortValueChange = (e) => {
     setSortValue(e.target.value);
   }
 
- 
+  //Sorting funcationality
   if(sortValue === "First Name:(A-Z)") {
     data.sort((a, b) => {
       if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
@@ -75,18 +81,15 @@ function App() {
       return 0;
     });
   } 
-
  
-
-
-
 	return (
     <>
 			<Heading />
       <main>
         <SearchBar inputValue={inputValue} handleInputChange={handleInputChange} handleClick={handleClick} />
         <SortBy sortValue={sortValue} handleSortValueChange={handleSortValueChange}/>
-        <Table data={data}/>
+        {dataValue ? <Table data={dataValue}/> : <h3>The name does not match any employees.</h3> }
+        
       </main>
 		</>
 	);
