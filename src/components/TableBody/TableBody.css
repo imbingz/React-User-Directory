@@ -7,14 +7,18 @@
 }
 
 .tbodyRow button {
+	background-color: rgb(20, 14, 85);
 	cursor: pointer;
 	padding: 0.2rem 0.5rem;
-	border: 0.5px solid grey;
+	border: 0.5px solid rgba(9, 5, 63);
 	border-radius: 1rem;
+	color: #fff;
 }
 
 .tbodyRow button:hover {
-	background-color: rgba(121, 116, 116, 0.8);
+	transform: scale(1.2);
+	background-color: rgb(82, 79, 129);
+	color: #fff;
 }
 
 .tbodyRow button:focus {
