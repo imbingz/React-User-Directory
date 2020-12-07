@@ -1,8 +1,3 @@
-tbody {
-	font-size: 90%;
-	text-align: center;
-}
-
 .tbodyRow img {
 	border-radius: 50%;
 }
@@ -24,4 +19,8 @@ tbody {
 
 .tbodyRow button:focus {
 	outline: 0;
+}
+
+tbody .moreInfo {
+	text-align: left;
 }
