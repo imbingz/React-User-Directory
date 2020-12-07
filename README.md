@@ -26,8 +26,8 @@ An employee directory with React Hooks that can filter and sort employees by nam
 
   ##  Project Links
 
-  ##### Deployed Link on Github Page:  https://imbingz.github.io/React-Employee-Directory/
-  ##### GitHub Repo link: https://github.com/imbingz/React-Employee-Directory
+  ##### Deployed Link on Github Page:  https://imbingz.github.io/React-User-Directory/
+  ##### GitHub Repo link: https://github.com/imbingz/React-User-Directory
 
   ## Screenshots-Demo
   <kbd>![screenshot-demo1](./public/demo.gif)</kbd>
