@@ -1,11 +1,6 @@
 
-# React-Employee-Directory
+# React-User-Directory
 An employee directory with React Hooks that can filter and sort employees by name and other categories. 
-
-Deployed site: 
- https://imbingz.github.io/React-Employee-Directory/.
-
-
 <hr>
 
   [![github-follow](https://img.shields.io/github/followers/imbingz?label=Follow&logoColor=purple&style=social)](https://github.com/imbingz)
