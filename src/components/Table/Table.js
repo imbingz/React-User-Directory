@@ -1,7 +1,7 @@
 import React from 'react';
-// import { data } from '../../data';
 import TableHead from '../TableHead';
 import TableBody from '../TableBody';
+import './Table.css';
 
 function Table({ data }) {
 	// 	data.sort((a, b) => {
@@ -14,9 +14,11 @@ function Table({ data }) {
 		<section className='employees'>
 			<table>
 				<TableHead />
-				{data.map(person => {
-					return <TableBody key={person._id} {...person} />;
-				})}
+				<tbody>
+					{data.map(person => {
+						return <TableBody key={person._id} {...person} data={data} />;
+					})}
+				</tbody>
 			</table>
 		</section>
 	);

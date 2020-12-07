@@ -1,0 +1,27 @@
+tbody {
+	font-size: 90%;
+	text-align: center;
+}
+
+.tbodyRow img {
+	border-radius: 50%;
+}
+
+.tbodyRow:nth-of-type(even) {
+	background-color: rgb(241, 238, 238);
+}
+
+.tbodyRow button {
+	cursor: pointer;
+	padding: 0.2rem 0.5rem;
+	border: 0.5px solid grey;
+	border-radius: 1rem;
+}
+
+.tbodyRow button:hover {
+	background-color: rgba(121, 116, 116, 0.8);
+}
+
+.tbodyRow button:focus {
+	outline: 0;
+}
