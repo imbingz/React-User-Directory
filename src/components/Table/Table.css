@@ -1,4 +1,9 @@
 table {
 	margin: 0 auto;
-	/* padding: 5rem; */
+	max-width: 80%;
+}
+
+tbody {
+	font-size: 90%;
+	text-align: center;
 }
