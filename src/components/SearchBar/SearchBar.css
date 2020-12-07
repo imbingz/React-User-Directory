@@ -23,3 +23,7 @@ section.searchBar {
 .searchBar .searchBtn:hover {
 	background-color: rgba(121, 116, 116, 0.8);
 }
+
+.searchBar .searchBtn:focus {
+	outline: 0;
+}
