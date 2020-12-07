@@ -32,6 +32,7 @@ function App() {
   
   //SortBy Component 
   const handleSortValueChange = (e) => {
+    setDataValue(data)
     setSortValue(e.target.value);
   }
 

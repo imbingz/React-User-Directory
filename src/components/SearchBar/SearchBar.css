@@ -24,6 +24,7 @@ section.searchBar {
 	background-color: rgba(121, 116, 116, 0.8);
 }
 
-.searchBar .searchBtn:focus {
+.searchBar .searchBtn,
+.searchBar input:focus {
 	outline: 0;
 }
