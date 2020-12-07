@@ -1,0 +1,25 @@
+section.searchBar {
+	padding: 2rem;
+	text-align: center;
+}
+
+.searchBar input {
+	display: inline-block;
+	border: 0.5px solid grey;
+	border-radius: 2rem;
+	padding: 0.3rem;
+	min-width: 15rem;
+	margin-right: 1.5rem;
+}
+
+.searchBar .searchBtn {
+	display: inline-block;
+	padding: 0.2rem 1.5rem;
+	border: 0.5px solid grey;
+	border-radius: 0.75rem;
+	cursor: pointer;
+}
+
+.searchBar .searchBtn:hover {
+	background-color: rgba(121, 116, 116, 0.8);
+}
