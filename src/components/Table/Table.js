@@ -4,12 +4,6 @@ import TableBody from '../TableBody';
 import './Table.css';
 
 function Table({ data }) {
-	// 	data.sort((a, b) => {
-	// 		if (a.name > b.name) return 1;
-	// 		if (a.name < b.name) return -1;
-	// 		return 0;
-	// 	});
-
 	return (
 		<section className='employees'>
 			<table>
