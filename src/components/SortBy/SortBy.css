@@ -1,0 +1,12 @@
+.sort .sortForm {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.sort lable {
+	font: 90%;
+}
+
+.sort select {
+	padding: 0.2rem;
+}
