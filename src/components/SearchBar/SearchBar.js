@@ -14,16 +14,6 @@ function SearchBar({ inputValue, handleInputChange, handleClick, filterValue, ha
 					placeholder='Enter a name ...'
 					onChange={handleInputChange}
 				/>
-				{/* <label htmlFor='filterBy'>Filter By:</label>
-				<select name='filterBy' value={filterValue} onChange={handleFilterValueChange} id='sortBy'>
-					<option value='' disabled hidden>
-						Choose a Filter
-					</option>
-					<option value='Title'>Title</option>
-					<option value='Location'>Location</option>
-					<option value='Availability'>Availability</option>
-				</select> */}
-
 				<button className='searchBtn' onClick={handleClick}>
 					Search
 				</button>
