@@ -13,7 +13,7 @@ function App() {
   const [sortValue, setSortValue] = useState('')
 
   //Handle search input
-	const handleInputChange = e => {
+  const handleInputChange = e => {
     setDataValue(data)
     setInputValue(e.target.value);
   };
