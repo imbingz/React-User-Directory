@@ -19,7 +19,7 @@ function App() {
     setInputValue(e.target.value);
   };
   
-  //handle find button click 
+  //handle search button click 
   const handleClick = e => {
     e.preventDefault();
     if(inputValue) {
