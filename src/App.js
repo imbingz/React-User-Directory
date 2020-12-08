@@ -9,7 +9,6 @@ import Table from './components/Table';
 function App() {
   //set state hook 
   const [ inputValue, setInputValue ] = useState('');
-  // const [ filterValue, setFilterValue ] = useState('');
   const [dataValue, setDataValue] = useState(data)
   const [sortValue, setSortValue] = useState('')
 
