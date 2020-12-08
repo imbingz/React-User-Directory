@@ -1,10 +1,10 @@
 import React from 'react';
 import './Heading.css';
 
-function Heading() {
+function Heading({ title }) {
 	return (
 		<header>
-			<h1>Employee Directory</h1>
+			<h1>{title}</h1>
 		</header>
 	);
 }

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './App.css';
 import {data} from './data';
 import Heading from './components/Heading';
 import SearchBar from './components/SearchBar';
@@ -88,7 +87,7 @@ function App() {
  
 return (
     <>
-      <Heading />
+      <Heading title="Employee Directory"/>
       <main>
         <SearchBar inputValue={inputValue} handleInputChange={handleInputChange} handleClick={handleClick} />
         <SortBy sortValue={sortValue} handleSortValueChange={handleSortValueChange}/>
