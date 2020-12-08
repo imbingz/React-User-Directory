@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBar.css';
 
-function SearchBar({ inputValue, handleInputChange, handleClick, filterValue, handleFilterValueChange }) {
+function SearchBar({ inputValue, handleInputChange, handleClick }) {
 	return (
 		<section className='searchBar'>
 			<form className='searchForm'>
