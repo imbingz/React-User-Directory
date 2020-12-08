@@ -20,7 +20,7 @@ function App() {
   };
   
   //handle find button click 
-	const handleClick = e => {
+  const handleClick = e => {
     e.preventDefault();
     if(inputValue) {
       setDataValue(dataValue.filter(person => {
@@ -87,17 +87,17 @@ function App() {
     });
   } 
  
-	return (
+return (
     <>
-			<Heading />
+      <Heading />
       <main>
         <SearchBar inputValue={inputValue} handleInputChange={handleInputChange} handleClick={handleClick} />
         <SortBy sortValue={sortValue} handleSortValueChange={handleSortValueChange}/>
         {dataValue ? <Table data={dataValue}/> : <h3>The name does not match any employees.</h3> }
         
       </main>
-		</>
-	);
+    </>
+);
 }
 
 export default App;
