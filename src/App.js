@@ -91,8 +91,7 @@ return (
       <main>
         <SearchBar inputValue={inputValue} handleInputChange={handleInputChange} handleClick={handleClick} />
         <SortBy sortValue={sortValue} handleSortValueChange={handleSortValueChange}/>
-        {dataValue ? <Table data={dataValue}/> : <h3>The name does not match any employees.</h3> }
-        
+        {dataValue ? <Table data={dataValue}/> : <h3>The name does not match any employees.</h3> }    
       </main>
     </>
 );
