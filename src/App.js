@@ -28,6 +28,10 @@ function App() {
     }
   };
   
+  //SortBy Categories 
+  const sortCategories = ["First Name:(A-Z)","First Name:(Z-A)", "Title:(A-Z)", "Title:(Z-A)", "Location:(A-Z)", "Location:(Z-A)", "Availability:(A-Z)", "Availability:(Z-A)"]
+
+
   //SortBy Component 
   const handleSortValueChange = (e) => {
     setDataValue(data)
@@ -90,11 +94,12 @@ return (
       <Heading title="Employee Directory"/>
       <main>
         <SearchBar inputValue={inputValue} handleInputChange={handleInputChange} handleClick={handleClick} />
-        <SortBy sortValue={sortValue} handleSortValueChange={handleSortValueChange}/>
-        {dataValue ? <Table data={dataValue}/> : <h3>The name does not match any employees.</h3> }    
+        <SortBy sortCategories={sortCategories} sortValue={sortValue} handleSortValueChange={handleSortValueChange}/>
+        {dataValue.length !== 0 ? <Table data={dataValue}/> : <h2 style={{textAlign: 'center', color:"#e54"}}>No employee found with that name.</h2> }    
       </main>
     </>
 );
 }
+
 
 export default App;
