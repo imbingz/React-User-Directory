@@ -1,6 +1,7 @@
 table {
 	margin: 0 auto;
 	max-width: 80%;
+	border-bottom: 0.5px solid lightgray;
 }
 
 tbody {
